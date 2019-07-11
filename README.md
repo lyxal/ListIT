@@ -281,6 +281,16 @@ Basilcy, autoclicker which would use information from a text file to determine w
     >     type(description) #NEEDS TO HAVE SPECIALIZED FUNCION DUE TO \n.
     >     mouse.click(Button.left,1)
    
-## Author:
+# Why use AWS lightsail:
+   Aws Lightsail is a scalable web application server. It is a linux virtual machine, which can be setup so that as demand rises and decreases, AWS fires up more Virtual machines, and then shuts them down.
+   
+   This is usefull as AWS virtualmachines you pay for by the hour. (As ours are ON DEMAND)
+   
+   However... If you were to use this, you'd need a way for all the virtual machines to acess the same `usr.json` and `adds.json` files. The best way to do this would be to create a AWS virtual storage of some type **S3 would do fine** and mount the Virtual storage as the private folder in each of these directorys: The following turorial may help:
+   
+   https://cloudkul.com/blog/mounting-s3-bucket-linux-ec2-instance/
+   
+   Obv mount in a non publically acessible folder, but somewhere that PHP can still acess it.
+# Author:
 Angus Clayton 2019. 
 
