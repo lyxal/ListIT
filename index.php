@@ -138,9 +138,9 @@ body {
 <!-- Navbar (sit on top) -->
 <div class="topnav">
   <a class="active" href="#home">Home</a>
-  <a href="list">List an Add</a>
+  <a href="list">List an Ad</a>
   <a href="list/message.php">Messages</a>
-  <a href="list/message.php">Your Adds</a>
+  <a href="list/message.php">Your Ads</a>
 <?PHP
 $USR = $_SESSION["USR"];
 if (isset($_SESSION["USR"])) {
@@ -183,7 +183,6 @@ else {
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
     <span class="w3-jumbo w3-hide-small">List it</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
     <span class="w3-large">Stop wasting time selling stuff.</span>
     <p><a href="list" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">List an item</a></p>
   </div>
